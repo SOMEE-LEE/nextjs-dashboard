@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  /* font 단위가 rem이라 모바일에서(=화면크기줄였을때) 레이아웃 깨지는것 방지
+  -> 개발자도구에 font-size: 16px라 떠야함 */
+  font-size: 16px !important;
+}
+
 input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;
